@@ -1,2 +1,2 @@
 # midori
-Design System of the Future
+a nice design system experiment without non-sense stuff
