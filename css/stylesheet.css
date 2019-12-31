@@ -256,6 +256,8 @@ main > .card:last-child {
 
 form {
     max-width: 75ch;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
@@ -315,26 +317,25 @@ button,
     background-color: #333695;
     color: white;
     padding: 1rem;
-    border: none;
     margin: 0 0 0.5rem;
     cursor: pointer;
     font-size: 1rem;
+    border: 1px solid #333695;
 }
 
 button.right {
     margin: 0 0 0 0.5rem;
+    align-self: flex-end;
 }
 
-button.right:first-child{
-    margin-left: auto;
+button.right:first-child {
+    margin: 0 0.5rem 0 auto;
+    align-self: flex-end;
 }
 
 button.left {
     margin: 0 0.5rem 0 0;
-}
-
-button.left:last-child{
-    margin-right: auto;
+    align-self: flex-start;
 }
 
 button[type="submit"]:hover {
@@ -343,7 +344,6 @@ button[type="submit"]:hover {
 
 button.secondary {
     color: #333695;
-    border: 1px solid #333695;
     background-color: #fff;
 }
 
