@@ -503,6 +503,7 @@ dd ul {
     width: 100%;
     padding-top: 56.25%;
     background-color: #fff;
+    border-bottom: 1px solid #ececec;
 }
 
 .hero-text {
