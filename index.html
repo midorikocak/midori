@@ -77,6 +77,33 @@
         <figure>
             <img alt="placeholder" src="https://via.placeholder.com/750"/>
         </figure>
+
+
+        <p>JavaScript has never had any official solution for distributing packages, and every web platform (Rails,
+            Django etc) has their own idea of how to structure and package JavaScript. In the last few years, NPM has
+            started becoming the canonical way of distribution, with Webpack as the build system, but there’s no way to
+            load NPM packages in the browser without a server-side component.</p>
+
+        <section>
+            <h2>Subsection</h2>
+            <p>JavaScript has never had any official solution for distributing packages, and every web platform (Rails,
+                Django etc) has their own idea of how to structure and package JavaScript. In the last few years, NPM
+                has
+                started becoming the canonical way of distribution, with Webpack as the build system, but there’s no way
+                to
+                load NPM packages in the browser without a server-side component.</p>
+        </section>
+
+        <section>
+            <h2>Subsection</h2>
+            <p>JavaScript has never had any official solution for distributing packages, and every web platform (Rails,
+                Django etc) has their own idea of how to structure and package JavaScript. In the last few years, NPM
+                has
+                started becoming the canonical way of distribution, with Webpack as the build system, but there’s no way
+                to
+                load NPM packages in the browser without a server-side component.</p>
+        </section>
+
     </article>
 
     <section class="card">
@@ -102,6 +129,63 @@
             </div>
             <button type="submit">Done</button>
         </form>
+    </section>
+
+    <section class="card">
+
+        <h2>Form example</h2>
+        <fieldset>
+            <legend>Which taxi do you require?</legend>
+            <div class="form-group">
+                <label class="radio"> <input type="radio" name="taxi" required value="car"> Car </label>
+                <label class="radio"> <input type="radio" name="taxi" required value="van"> Van </label>
+                <label class="radio"> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Extras</legend>
+            <label class="checkbox"> <input type="checkbox" name="extras" value="baby"> Baby Seat </label>
+            <label class="checkbox"> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access </label>
+            <label class="checkbox"> <input type="checkbox" name="extras" value="tip"> Stock Tip </label>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="pickup_time">Pickup Date/Time</label>
+            <input id="pickup_time" type="datetime-local" name="pickup_time" required>
+
+        </div>
+
+        <div class="form-group">
+            <label for="pickup_place">Pickup Place</label>
+
+            <select id="pickup_place" name="pickup_place">
+                <option value="" selected="selected">Select One</option>
+                <option value="office">Taxi Office</option>
+                <option value="town_hall">Town Hall</option>
+                <option value="telepathy">We'll Guess!</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="dropoff">Dropoff Place</label>
+            <input id="dropoff" type="text" name="dropoff_place" required list="destinations">
+
+            <datalist id="destinations">
+                <option value="Airport">
+                <option value="Beach">
+                <option value="Fred Flinstone's House">
+            </datalist>
+
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Special Instructions</label>
+            <textarea id="comments" name="comments" maxlength="500"></textarea>
+
+        </div>
+
+
     </section>
 
 
