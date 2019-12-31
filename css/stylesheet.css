@@ -231,13 +231,20 @@ a {
 
 /* Components */
 
+main > .card{
+    margin: 0 2rem;
+}
+
+main > .card:last-child{
+    margin-bottom: 1rem;
+}
+
 .card {
     background-color: #fff;
     padding: 2rem;
     border: 1px solid #ececec;
     box-shadow: var(--shadow);
     overflow-x: auto;
-    margin: 2rem;
 }
 
 .copyright {
