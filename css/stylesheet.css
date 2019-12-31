@@ -176,7 +176,6 @@ body {
     .sidebar > ul > li:hover {
         background-color: #fff;
     }
-
 }
 
 /* Typography */
@@ -239,6 +238,7 @@ a {
     padding: 2rem;
     border: 1px solid #ececec;
     box-shadow: var(--shadow);
+    overflow-x: auto;
 }
 
 .copyright {
