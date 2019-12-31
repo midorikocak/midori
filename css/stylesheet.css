@@ -463,6 +463,21 @@ dd ul {
     flex-direction: column;
 }
 
+/* Badges */
+
+.badge {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.54);;
+    padding: 0.5rem;
+    line-height: 1;
+    margin:  0.125rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
 /* helpers */
 
 .active {
