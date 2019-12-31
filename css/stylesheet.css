@@ -94,6 +94,10 @@ body {
     padding: 1rem 0;
 }
 
+.logo a {
+    color: #333695;
+}
+
 .logo > h1 {
     margin: 0;
     padding: 0;
@@ -138,6 +142,41 @@ body {
     border-top: 1px solid #ececec;
 
     background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "nav" "main" "footer";
+    }
+
+    .sidebar {
+        margin: 2rem;
+        padding: 0;
+        background-color: initial;
+        border: none;
+    }
+
+    .sidebar > ul {
+        background-color: initial;
+    }
+
+    .sidebar > ul > li:first-child {
+        padding-top: 2rem;
+    }
+
+    .sidebar > ul > li {
+        margin-bottom: 1rem;
+        padding: 2rem 2rem;
+        background-color: #fff;
+        border: 1px solid #ececec;
+        box-shadow: var(--shadow);
+    }
+
+    .sidebar > ul > li:hover {
+        background-color: #fff;
+    }
+
 }
 
 /* Typography */
