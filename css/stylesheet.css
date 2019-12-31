@@ -93,6 +93,7 @@ body {
     grid-area: nav;
     border-right: 1px solid #ececec;
     background-color: #fff;
+    line-height: 1;
 }
 
 .sidebar > ul {
@@ -101,12 +102,10 @@ body {
 
 .sidebar > ul > li:first-child {
     padding-top: 1rem;
-    border-top: 1px solid #ececec;
 }
 
 .sidebar > ul > li {
     padding-left: 2rem;
-    border-bottom: 1px solid #ececec;
 }
 
 .main {
