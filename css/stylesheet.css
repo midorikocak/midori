@@ -4,10 +4,6 @@
     --shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2);
 }
 
-img{
-    max-width: 100%;
-}
-
 html {
     line-height: 1.15;
     font-size: 16px;
@@ -243,6 +239,30 @@ button[type="submit"]:hover {
     color: red;
 }
 
+/* Article */
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 75ch 1fr;
+}
+
+article > * {
+    grid-column: 2;
+}
+
+article > figure {
+    margin: 20px 0;
+}
+
+article > blockquote {
+    padding-left: 10px;
+    color: #666;
+    border-left: 3px solid black;
+}
+
+img {
+    max-width: 75ch;
+}
 
 /* helpers */
 
