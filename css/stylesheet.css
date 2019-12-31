@@ -4,6 +4,10 @@
     --shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2);
 }
 
+img{
+    max-width: 100%;
+}
+
 html {
     line-height: 1.15;
     font-size: 16px;
@@ -217,7 +221,10 @@ textarea {
     margin: 1rem 0;
 }
 
-button[type="submit"] {
+button,
+[type="reset"],
+[type="button"],
+[type="submit"] {
     display: block;
     background-color: #333695;
     color: white;
