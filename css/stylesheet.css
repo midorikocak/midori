@@ -70,7 +70,7 @@ body {
 
 body {
     grid-template-areas: "header header" "nav  main" "footer  footer";
-    grid-template-columns: minmax(auto, 0.2fr) 1fr;
+    grid-template-columns: minmax(auto, 2fr) 8fr;
     grid-template-rows: auto 1fr auto;
 }
 
