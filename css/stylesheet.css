@@ -69,7 +69,7 @@ body {
 /* Layout */
 
 body {
-    grid-template-areas: "header header" "nav  main" "footer  footer";
+    grid-template-areas: "header header" "nav  main" "nav  footer";
     grid-template-columns: minmax(auto, 2fr) 8fr;
     grid-template-rows: auto 1fr auto;
 }
@@ -130,6 +130,7 @@ body {
     display: grid;
     grid-gap: 1rem;
     grid-area: main;
+    overflow-y: scroll;
 }
 
 .footer {
@@ -244,7 +245,6 @@ main > .card:last-child {
     padding: 2rem;
     border: 1px solid #ececec;
     box-shadow: var(--shadow);
-    overflow-x: auto;
 }
 
 .copyright {
