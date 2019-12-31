@@ -7,6 +7,19 @@
 </head>
 <body>
 
+<svg class="hide" style="position: fixed; z-index: 1000;" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="smallGrid" width="16" height="16" patternUnits="userSpaceOnUse">
+            <path d="M 16 0 L 0 0 0 16" fill="none" stroke="gray" stroke-width="0.5"/>
+        </pattern>
+        <pattern id="grid" width="160" height="160" patternUnits="userSpaceOnUse">
+            <rect width="160" height="160" fill="url(#smallGrid)"/>
+            <path d="M 160 0 L 0 0 0 160" fill="none" stroke="gray" stroke-width="1"/>
+        </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+</svg>
+
 <header class="header">
     <div class="logo">
         <h1>Me</h1>
@@ -64,6 +77,11 @@
 
     <article class="card">
         <h1>Running any NPM package in the browser locally</h1>
+        <p class="article-info">By Midori Kocak. Published
+            <time datetime='2017-1-3'>January
+                3rd
+            </time>
+        </p>
         <p>JavaScript has never had any official solution for distributing packages, and every web platform (Rails,
             Django etc) has their own idea of how to structure and package JavaScript. In the last few years, NPM has
             started becoming the canonical way of distribution, with Webpack as the build system, but there’s no way to
@@ -134,58 +152,87 @@
     <section class="card">
 
         <h2>Form example</h2>
-        <fieldset>
-            <legend>Which taxi do you require?</legend>
+        <form>
+            <fieldset>
+                <legend>Which taxi do you require?</legend>
+                <div class="form-group">
+                    <label class="radio"> <input type="radio" name="taxi" required value="car"> Car </label>
+                    <label class="radio"> <input type="radio" name="taxi" required value="van"> Van </label>
+                    <label class="radio"> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras</legend>
+                <label class="checkbox"> <input type="checkbox" name="extras" value="baby"> Baby Seat </label>
+                <label class="checkbox"> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access
+                </label>
+                <label class="checkbox"> <input type="checkbox" name="extras" value="tip"> Stock Tip </label>
+            </fieldset>
+
             <div class="form-group">
-                <label class="radio"> <input type="radio" name="taxi" required value="car"> Car </label>
-                <label class="radio"> <input type="radio" name="taxi" required value="van"> Van </label>
-                <label class="radio"> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label>
+                <label for="pickup_time">Pickup Date/Time</label>
+                <input id="pickup_time" type="datetime-local" name="pickup_time" required>
+
             </div>
-        </fieldset>
 
-        <fieldset>
-            <legend>Extras</legend>
-            <label class="checkbox"> <input type="checkbox" name="extras" value="baby"> Baby Seat </label>
-            <label class="checkbox"> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access </label>
-            <label class="checkbox"> <input type="checkbox" name="extras" value="tip"> Stock Tip </label>
-        </fieldset>
+            <div class="form-group">
+                <label for="pickup_place">Pickup Place</label>
 
-        <div class="form-group">
-            <label for="pickup_time">Pickup Date/Time</label>
-            <input id="pickup_time" type="datetime-local" name="pickup_time" required>
+                <select id="pickup_place" name="pickup_place">
+                    <option value="" selected="selected">Select One</option>
+                    <option value="office">Taxi Office</option>
+                    <option value="town_hall">Town Hall</option>
+                    <option value="telepathy">We'll Guess!</option>
+                </select>
+            </div>
 
-        </div>
+            <div class="form-group">
+                <label for="dropoff">Dropoff Place</label>
+                <input id="dropoff" type="text" name="dropoff_place" required list="destinations">
 
-        <div class="form-group">
-            <label for="pickup_place">Pickup Place</label>
+                <datalist id="destinations">
+                    <option value="Airport">
+                    <option value="Beach">
+                    <option value="Fred Flinstone's House">
+                </datalist>
 
-            <select id="pickup_place" name="pickup_place">
-                <option value="" selected="selected">Select One</option>
-                <option value="office">Taxi Office</option>
-                <option value="town_hall">Town Hall</option>
-                <option value="telepathy">We'll Guess!</option>
-            </select>
-        </div>
+            </div>
 
-        <div class="form-group">
-            <label for="dropoff">Dropoff Place</label>
-            <input id="dropoff" type="text" name="dropoff_place" required list="destinations">
+            <div class="form-group">
+                <label for="comments">Special Instructions</label>
+                <textarea id="comments" name="comments" maxlength="500"></textarea>
 
-            <datalist id="destinations">
-                <option value="Airport">
-                <option value="Beach">
-                <option value="Fred Flinstone's House">
-            </datalist>
+            </div>
+        </form>
 
-        </div>
+    </section>
 
-        <div class="form-group">
-            <label for="comments">Special Instructions</label>
-            <textarea id="comments" name="comments" maxlength="500"></textarea>
-
-        </div>
-
-
+    <section class="card">
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Height</th>
+                <th>Location</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Stephen Curry</td>
+                <td>27</td>
+                <td>1,91</td>
+                <td>Akron, OH</td>
+            </tr>
+            <tr>
+                <td>Klay Thompson</td>
+                <td>25</td>
+                <td>2,01</td>
+                <td>Los Angeles, CA</td>
+            </tr>
+            </tbody>
+        </table>
     </section>
 
 
