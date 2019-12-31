@@ -204,12 +204,12 @@ input[type="email"],
 select,
 textarea {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 1rem;
+    margin: 0.5rem 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .form-group {
@@ -220,11 +220,11 @@ button[type="submit"] {
     display: block;
     background-color: #333695;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0 0 auto;
+    padding: 1rem;
+    margin: 0.5rem 0 0 auto;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 button[type="submit"]:hover {
