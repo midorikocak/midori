@@ -25,9 +25,6 @@ ul {
     display: flex;
 }
 
-ul > li:hover {
-    background-color: #f7f7fc;
-}
 
 ul.horizontal {
     flex-direction: row;
@@ -35,10 +32,15 @@ ul.horizontal {
     align-items: stretch;
 }
 
+
 ul.horizontal > li {
     display: flex;
     align-items: center;
     padding: 1rem;
+}
+
+ul.horizontal > li:hover {
+    background-color: #f7f7fc;
 }
 
 ul.vertical {
@@ -47,6 +49,14 @@ ul.vertical {
 
 ul.vertical > li {
     padding: 1rem;
+}
+
+ul.vertical > li:hover {
+    background-color: #f7f7fc;
+}
+
+section section:not(:last-child) {
+    margin: 0 0 2rem;
 }
 
 /* Spacing */
@@ -152,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2rem;
     line-height: 1.2;
-    margin: 0 0 2rem;
+    margin: 0 0 1rem;
 }
 
 h2 {
@@ -164,6 +174,7 @@ h2 {
 h3 {
     font-size: 1rem;
     line-height: 1;
+    margin: 0 0 0.5rem;
     font-weight: bold;
 }
 
@@ -282,7 +293,7 @@ table {
 }
 
 th, td {
-    padding: 1rem;
+    padding: 1rem 2rem;
     text-align: left;
     border-bottom: 1px solid #ececec;
 }
@@ -356,6 +367,52 @@ img {
     max-width: 75ch;
 }
 
+/* Description List */
+
+dl {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+dl.vertical {
+    flex-direction: column;
+}
+
+dl.horizontal {
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+dl.horizontal dd:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+dl.horizontal dd:not(:last-child):after {
+    margin-left: 0.5rem;
+    content: "|";
+}
+
+dl.only-values dt {
+    display: none;
+}
+
+dd, dl {
+    margin: 0;
+}
+
+dd.important {
+    color: #000;
+}
+
+dd.less-important {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+dd ul {
+    flex-direction: column;
+}
+
 /* helpers */
 
 .active {
@@ -373,4 +430,24 @@ img {
 
 .hide {
     display: none;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-border {
+    border: none;
+}
+
+.serif{
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.sans-serif{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }

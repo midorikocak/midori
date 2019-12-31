@@ -24,7 +24,7 @@
     <div class="logo">
         <h1>Me</h1>
     </div>
-    <nav class="top-menu">
+    <nav class="top-nav">
         <ul class="horizontal">
             <li><a href="#">Preview</a></li>
             <li><a href="#">Settings</a></li>
@@ -47,22 +47,56 @@
     </ul>
 </nav>
 <main class="main">
-    <article class="card full-height">
-        <h1>Midori Kocak</h1>
-        <p>Açıklama</p>
+    <section class="card full-height serif">
+        <h1 class="no-margin">Midori Kocak</h1>
+        <dl class="only-values horizontal">
+            <dt>Position</dt>
+            <dd class="important">Software Engineer</dd>
+        </dl>
 
         <section id="basics">
-            <h2 class="hidden">Basics</h2>
-            <ul>
-                <li>email</li>
-                <li>phone</li>
-                <li>address</li>
-            </ul>
+            <h2 class="hide">Basics</h2>
+            <dl class="only-values horizontal">
+                <dt>City</dt>
+                <dd>Prague</dd>
+
+                <dt>Email</dt>
+                <dd>Email Mutlu</dd>
+
+                <dt>Phone</dt>
+                <dd>+420775259871</dd>
+            </dl>
         </section>
         <section id="experience">
             <h2>Experience</h2>
             <ul>
-                <li> Son çalıştığım iş</li>
+                <li>
+
+                    <dl class="only-values vertical">
+                        <dt>Position</dt>
+                        <dd class="important">Senior Software Engineer</dd>
+                        <dt>Company</dt>
+                        <dd class="important">McKinsey & Company</dd>
+                        <dt>City</dt>
+                        <dd>Prague</dd>
+                        <dt>Time</dt>
+                        <dd>Mar 2018 - Jun 2019</dd>
+                        <dt>Description</dt>
+                        <dd class="less-important">
+                            <ul>
+                                <li>- Worked as full-stack engineer for development of web applications. (React,
+                                    node.js,
+                                    ELM)
+                                </li>
+                                <li>- Tech lead for development of the new McKinsey Design System used worldwide.
+                                    (React,
+                                    Webpack, SASS)
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+
+                </li>
             </ul>
         </section>
         <section id="education">
@@ -73,7 +107,7 @@
                 </li>
             </ul>
         </section>
-    </article>
+    </section>
 
     <article class="card">
         <h1>Running any NPM package in the browser locally</h1>
@@ -208,7 +242,7 @@
 
     </section>
 
-    <section class="card">
+    <section class="card no-padding no-border">
         <table>
             <thead>
             <tr>
