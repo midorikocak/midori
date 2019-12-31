@@ -21,16 +21,27 @@
 </svg>
 
 <header class="header">
-    <div class="logo">
-        <h1>Me</h1>
+    <div class="row">
+        <div class="logo">
+            <h1>Me</h1>
+        </div>
+        <nav class="top-nav">
+            <ul class="horizontal">
+                <li><a href="#">Preview</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav class="top-nav">
-        <ul class="horizontal">
-            <li><a href="#">Preview</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>
-    </nav>
+    <div class="row hide">
+        <nav style="display: block;" class="horizontal">
+            <ul class="horizontal">
+                <li><a class="active" href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <nav class="sidebar">
     <ul class="vertical">
@@ -250,6 +261,7 @@
                 <th>Age</th>
                 <th>Height</th>
                 <th>Location</th>
+                <th>Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -258,6 +270,7 @@
                 <td>27</td>
                 <td>1,91</td>
                 <td>Akron, OH</td>
+                <td>View | Edit | Delete</td>
             </tr>
             <tr>
                 <td>Klay Thompson</td>

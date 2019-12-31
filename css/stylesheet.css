@@ -74,10 +74,14 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-.header {
+.header{
+    grid-area: header;
+}
+
+.header .row{
     display: flex;
     justify-content: space-between;
-    grid-area: header;
+
     padding: 0 2rem;
     border-bottom: 1px solid #ececec;
     background-color: #fff;
@@ -372,6 +376,9 @@ img {
 dl {
     display: flex;
     flex-direction: column;
+}
+
+dl, dl.normal {
     color: rgba(0, 0, 0, 0.64);
 }
 
@@ -429,7 +436,7 @@ dd ul {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .no-padding {
@@ -444,10 +451,10 @@ dd ul {
     border: none;
 }
 
-.serif{
+.serif {
     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-.sans-serif{
+.sans-serif {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
