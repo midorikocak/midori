@@ -179,6 +179,10 @@ body {
     .sidebar > ul > li:hover {
         background-color: #fff;
     }
+
+    .aspect {
+        padding-top: 100%;
+    }
 }
 
 /* Typography */
@@ -499,11 +503,22 @@ dd ul {
 /* Hero */
 
 .hero {
+    background-color: #fff;
+    border-bottom: 1px solid #ececec;
+}
+
+.aspect {
     position: relative;
     width: 100%;
     padding-top: 56.25%;
-    background-color: #fff;
-    border-bottom: 1px solid #ececec;
+}
+
+.aspect-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .hero-text {
@@ -511,12 +526,7 @@ dd ul {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    position: absolute;
     padding: 2rem;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
 }
 
 .hero-message {
@@ -605,4 +615,46 @@ dd ul {
 
 .scroll {
     overflow-x: scroll;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "nav" "main" "footer";
+    }
+
+    .main {
+        overflow: initial;
+    }
+
+    .sidebar {
+        margin: 2rem;
+        padding: 0;
+        background-color: initial;
+        border: none;
+    }
+
+    .sidebar > ul {
+        background-color: initial;
+    }
+
+    .sidebar > ul > li:first-child {
+        padding-top: 2rem;
+    }
+
+    .sidebar > ul > li {
+        margin-bottom: 1rem;
+        padding: 2rem 2rem;
+        background-color: #fff;
+        border: 1px solid #ececec;
+        box-shadow: var(--shadow);
+    }
+
+    .sidebar > ul > li:hover {
+        background-color: #fff;
+    }
+
+    .aspect {
+        padding-top: 100%;
+    }
 }
