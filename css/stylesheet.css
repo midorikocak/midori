@@ -122,7 +122,6 @@ body {
     border-right: 1px solid #ececec;
     background-color: #fff;
     line-height: 1;
-    transition: all 1s;
     width: 20vw;
     height: 100vw;
 }
@@ -156,50 +155,6 @@ body {
     background-color: #fff;
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "header" "nav" "main" "footer";
-    }
-
-    .main {
-        overflow: initial;
-    }
-
-    .sidebar {
-        margin: 2rem;
-        padding: 0;
-        background-color: initial;
-        border: none;
-        width: auto;
-        height: auto;
-    }
-
-    .sidebar > ul {
-        background-color: initial;
-    }
-
-    .sidebar > ul > li:first-child {
-        padding-top: 2rem;
-    }
-
-    .sidebar > ul > li {
-        margin-bottom: 1rem;
-        padding: 2rem 2rem;
-        background-color: #fff;
-        border: 1px solid #ececec;
-        box-shadow: var(--shadow);
-    }
-
-    .sidebar > ul > li:hover {
-        background-color: #fff;
-    }
-
-    .aspect {
-        padding-top: 100%;
-    }
-}
 
 /* Typography */
 
@@ -580,6 +535,10 @@ dd ul {
 
 /* Hamburger */
 
+.menu-toggle {
+    display: none;
+}
+
 /* helpers */
 
 .active {
@@ -615,6 +574,7 @@ dd ul {
     width: 0;
     height: 0;
     overflow: hidden;
+    display: none;
 }
 
 .no-padding {
@@ -644,9 +604,14 @@ dd ul {
     height: auto;
 }
 
+.hide-mobile {
+    display: initial;
+}
+
 @media only screen and (max-width: 768px) {
     body {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         grid-template-areas: "header" "nav" "main" "footer";
     }
 
@@ -654,11 +619,21 @@ dd ul {
         overflow: initial;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
     .sidebar {
         margin: 2rem;
         padding: 0;
         background-color: initial;
         border: none;
+        width: auto;
+        height: auto;
     }
 
     .sidebar > ul {

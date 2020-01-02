@@ -1,5 +1,5 @@
 function hideSidebar() {
     var element = document.querySelector('.sidebar')
-    element.classList.toggle("no-size");
+    element.classList.toggle("hide-mobile");
 }
 
