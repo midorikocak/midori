@@ -149,6 +149,10 @@ body {
         grid-template-areas: "header" "nav" "main" "footer";
     }
 
+    .main {
+        overflow: initial;
+    }
+
     .sidebar {
         margin: 2rem;
         padding: 0;
@@ -357,10 +361,6 @@ button.secondary:hover {
 }
 
 /* Table */
-
-.table-container {
-    overflow-x: auto;
-}
 
 table {
     border-collapse: collapse;
@@ -601,4 +601,8 @@ dd ul {
 
 .sans-serif {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.scroll {
+    overflow-x: scroll;
 }
