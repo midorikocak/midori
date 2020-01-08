@@ -76,7 +76,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Hero][product-screenshot]](https://midorikocak.github.io/midori)
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
@@ -129,7 +129,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/midorikocak/midori/issues) for a list of proposed features (and known issues).
 
 
 
@@ -156,9 +156,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Midori Kocak - [@midorikocak](https://twitter.com/midorikocak) - mtkocak@gmail.com
 
-Project Link: [https://github.com/github_username/repo](https://github.com/github_username/repo)
+Project Link: [https://github.com/midorikocak/midori](https://github.com/midorikocak/midori)
 
 
 
@@ -187,5 +187,5 @@ Project Link: [https://github.com/github_username/repo](https://github.com/githu
 [license-url]: https://github.com/midorikocak/midori/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/midorikocak
-[product-screenshot]: docs/img/hero.png
-[logo]: docs/img/logo.svg
+[product-screenshot]: https://github.com/midorikocak/midori/docs/img/hero.png
+[logo]: https://github.com/midorikocak/midori/docs/img/logo.svg
