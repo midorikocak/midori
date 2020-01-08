@@ -165,9 +165,7 @@ Project Link: [https://github.com/midorikocak/midori](https://github.com/midorik
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [Jen Simmons](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag)
 
 
 
