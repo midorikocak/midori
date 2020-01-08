@@ -35,7 +35,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/midorikocak/midori">
-    <img src="logo.svg" alt="Logo" width="80" height="80">
+    <img src="docs/img/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">midori</h3>
@@ -76,7 +76,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Hero][product-screenshot]](https://midorikocak.github.io/midori)
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
@@ -85,9 +85,9 @@ Here's a blank template to get started:
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [html](https://html.spec.whatwg.org/)
+* [css](https://www.w3.org/Style/CSS/specs.en.html)
+* [js](https://www.ecma-international.org/publications/standards/Ecma-262.htm)
 
 
 
@@ -96,25 +96,7 @@ Here's a blank template to get started:
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
-
-### Installation
- 
-1. Clone the repo
-```sh
-git clone https://github.com/github_username/repo.git
-```
-2. Install NPM packages
-```sh
-npm install
-```
-
+- Open the index.html in a browser after cloning.
 
 
 <!-- USAGE EXAMPLES -->
@@ -122,14 +104,14 @@ npm install
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://mtkocak.net)_
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/midorikocak/midori/issues) for a list of proposed features (and known issues).
 
 
 
@@ -156,18 +138,16 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Midori Kocak - [@midorikocak](https://twitter.com/midorikocak) - mtkocak@gmail.com
 
-Project Link: [https://github.com/github_username/repo](https://github.com/github_username/repo)
+Project Link: [https://github.com/midorikocak/midori](https://github.com/midorikocak/midori)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [Jen Simmons](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag)
 
 
 
@@ -187,5 +167,5 @@ Project Link: [https://github.com/github_username/repo](https://github.com/githu
 [license-url]: https://github.com/midorikocak/midori/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/midorikocak
-[product-screenshot]: images/screenshot.png
-[logo]: logo.svg
+[product-screenshot]: docs/img/hero.png
+[logo]: docs/img/logo.svg
