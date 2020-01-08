@@ -35,7 +35,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/midorikocak/midori">
-    <img src="logo.svg" alt="Logo" width="80" height="80">
+    <img src="docs/img/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">midori</h3>
@@ -187,5 +187,5 @@ Project Link: [https://github.com/midorikocak/midori](https://github.com/midorik
 [license-url]: https://github.com/midorikocak/midori/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/midorikocak
-[product-screenshot]: https://github.com/midorikocak/midori/docs/img/hero.png
-[logo]: https://github.com/midorikocak/midori/docs/img/logo.svg
+[product-screenshot]: docs/img/hero.png
+[logo]: docs/img/logo.svg
