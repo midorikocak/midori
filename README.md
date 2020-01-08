@@ -85,9 +85,9 @@ Here's a blank template to get started:
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [html](https://html.spec.whatwg.org/)
+* [css](https://www.w3.org/Style/CSS/specs.en.html)
+* [js](https://www.ecma-international.org/publications/standards/Ecma-262.htm)
 
 
 
@@ -187,5 +187,5 @@ Project Link: [https://github.com/github_username/repo](https://github.com/githu
 [license-url]: https://github.com/midorikocak/midori/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/midorikocak
-[product-screenshot]: images/screenshot.png
-[logo]: logo.svg
+[product-screenshot]: docs/img/hero.png
+[logo]: docs/img/logo.svg
