@@ -34,11 +34,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo">
-    <img style="margin:0;" src="logo.svg" alt="Logo" width="80" height="80">
+  <a href="https://github.com/midorikocak/midori">
+    <img src="logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 style="margin:0;" align="center">midori</h3>
+  <h3 align="center">midori</h3>
 
   <p align="center">
     a nice design system experiment without non-sense stuff
